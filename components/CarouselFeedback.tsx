@@ -3,11 +3,13 @@
 import useFetch from "../hooks/useFetch"
 import Feedback from "./Feedback"
 import '../css/feedback.css'
+import { useProductContext } from "../context/ProductsContext"
+import { useEffect } from "react"
 
 const CarouselFeedback = () => {
-    const { data } = useFetch('https://fakestoreapi.com/users')
-
-    const selectedUsers = data?.filter((user: any) => user.id < 4)
+    const { users } = useProductContext()
+    
+    const selectedUsers = users?.filter((user: any) => user.id < 4)
 
     return (
         <div className="feedback_container">

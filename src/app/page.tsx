@@ -3,13 +3,13 @@ import Card from "../../components/Card";
 import CarouselFeedback from "../../components/CarouselFeedback";
 import Hero from "../../components/Hero";
 import SaleTimer from "../../components/SaleTimer";
-import useFetch from "../../hooks/useFetch";
 import '../../css/productCard.css'
+import { useProductContext } from "../../context/ProductsContext";
 
 export default function Home() {
-  const products = useFetch('https://fakestoreapi.com/products')
+  const { products } = useProductContext()
 
-  const onSaleProducts = products.data?.filter((product: any) => product.price > 120)
+  const onSaleProducts = products?.filter((product: any) => product.price > 120)
 
   return (
     <main>
