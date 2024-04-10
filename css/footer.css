@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    background-color: black;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2em 1em;
+}
+
+.footer_midia {
+    color: aliceblue;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+    flex: 1;
+    padding-left: 2em;
+}
+
+.logo_footer {
+    background-color: white;
+    color: black;
+    padding: 1em;
+    width: max-content;
+}
+
+.footer_info {
+    color: aliceblue;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+    flex: 1;
+    padding-left: 2em;
+}
+
+.footer_links_box {
+    color: aliceblue;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.links_bottom {
+    color: aliceblue;
+}

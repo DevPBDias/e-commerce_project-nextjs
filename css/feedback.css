@@ -1,0 +1,50 @@
+.feedback_container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: auto;
+    padding: 1em 0;
+}
+
+.feedback_container > h1 {
+    font-size: 2rem;
+}
+
+.feedbacks_container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 1;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.feedback_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+    background-color: blueviolet;
+    gap: 1em;
+}
+
+.feedback_info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    height: 40px;
+}
+
+.img_box, .img_box > img {
+    border-radius: 50%;
+    width: 40px;
+    height: 100%
+}
+
+.txt_box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.txt_adress {
+    font-size: .8rem;
+}

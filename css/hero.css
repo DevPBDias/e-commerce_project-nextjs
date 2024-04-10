@@ -1,0 +1,48 @@
+.hero_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    height: 620px;
+}
+
+.img_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.img_container > img {
+    height: 100%;
+    width: 100%; 
+}
+
+.txt_container {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+}
+
+.txt_container > h1 {
+    font-size: 4rem;
+}
+
+.txt_container > h3 {
+    font-size: 2rem;
+}
+
+.txt_container > button {
+    width: max-content;
+}

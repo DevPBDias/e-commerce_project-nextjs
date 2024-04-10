@@ -4,6 +4,7 @@ import CarouselFeedback from "../../components/CarouselFeedback";
 import Hero from "../../components/Hero";
 import SaleTimer from "../../components/SaleTimer";
 import useFetch from "../../hooks/useFetch";
+import '../../css/productCard.css'
 
 export default function Home() {
   const products = useFetch('https://fakestoreapi.com/products')
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section>
+      <section className="cards_container">
         {
           onSaleProducts !== null && onSaleProducts?.map((product: any) => (
             <Card key={product.id} data={product} />

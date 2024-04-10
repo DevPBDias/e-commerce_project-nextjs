@@ -1,10 +1,10 @@
 const Card = ({ data }: any) => {
     return (
-        <div>
-            <div>
+        <div className="product_card">
+            <div className="product_img_container">
                 <img src={data.image} alt={data.title} width={100} height={100}/>
             </div>
-            <div>
+            <div className="product_info_container">
                 <p>{data.title}</p>
                 <p>{data.category}</p>
                 <p>U$ {data.price}</p>
